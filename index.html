@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My Digital Portfolio</title>
+
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- AOS Scroll Animation -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Poppins', sans-serif; }
+  </style>
+</head>
+<body class="bg-gray-900 text-white font-sans scroll-smooth">
+
+  <!-- Header -->
+  <header class="bg-gray-800 sticky top-0 z-50 shadow-md">
+    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
+      <h1 class="text-xl font-bold">John Doe</h1>
+      <nav class="space-x-4">
+        <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#skills" class="hover:text-blue-400">Skills</a>
+        <a href="#certifications" class="hover:text-blue-400">Certifications</a>
+        <a href="#resume" class="hover:text-blue-400">Resume</a>
+        <a href="#contact" class="hover:text-blue-400">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Landing Section -->
+  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-gray-900 to-gray-800">
+    <img src="assets/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4 border-4 border-blue-500"/>
+    <h2 class="text-4xl font-bold mb-2">Hi, I'm John Doe</h2>
+    <p class="text-lg text-gray-300 mb-6">Aspiring Full Stack Developer & Cloud Enthusiast</p>
+    <a href="#about" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white transition btn">Get Started</a>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+      <p class="text-gray-300">
+        I am a passionate developer currently exploring the world of AI, cloud computing, and full-stack web development.
+        I love creating smart, scalable, and secure solutions to solve real-world problems.
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="py-20 px-6" data-aos="fade-up">
+    <div class="max-w-6xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-8">Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+        <!-- Project 1 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+          <img src="assets/project1.png" alt="Project 1" class="rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">AI Review Summarizer</h3>
+          <p class="text-gray-300 mb-2">A web app that analyzes and summarizes customer reviews using NLP and sentiment analysis.</p>
+          <a href="#" class="text-blue-400 hover:underline">View Demo</a>
+        </div>
+
+        <!-- Project 2 -->
+        <div class="bg-gray-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
+          <img src="assets/project1.png" alt="Project 2" class="rounded mb-4">
+          <h3 class="text-xl font-bold mb-2">TenantExitEase</h3>
+          <p class="text-gray-300 mb-2">AWS-powered app for tenant-landlord exit management with FastAPI backend and S3/DynamoDB integration.</p>
+          <a href="#" class="text-blue-400 hover:underline">View GitHub</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
+    <div class="max-w-4xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">Skills & Tools</h2>
+      <div class="flex flex-wrap gap-4 mt-4">
+        <span class="bg-blue-500 px-4 py-2 rounded">Python</span>
+        <span class="bg-green-600 px-4 py-2 rounded">FastAPI</span>
+        <span class="bg-yellow-500 px-4 py-2 rounded">AWS</span>
+        <span class="bg-indigo-600 px-4 py-2 rounded">TailwindCSS</span>
+        <span class="bg-pink-600 px-4 py-2 rounded">GitHub</span>
+        <span class="bg-red-600 px-4 py-2 rounded">JavaScript</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certifications Section -->
+  <section id="certifications" class="py-20 px-6" data-aos="fade-up">
+    <div class="max-w-3xl mx-auto">
+      <h2 class="text-3xl font-semibold mb-4">Certifications</h2>
+      <ul class="list-disc pl-6 text-gray-300">
+        <li>AWS Cloud Practitioner – 2024</li>
+        <li>IBM AI Engineering Certificate – 2024</li>
+        <li>POSH Policy & Compliance Training – 2025</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Resume Section -->
+  <section id="resume" class="py-20 px-6 bg-gray-800 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">My Resume</h2>
+    <a href="assets/resume.pdf" download class="bg-blue-600 px-6 py-2 rounded hover:bg-blue-700 transition btn">Download Resume</a>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-20 px-6 text-center" data-aos="fade-up">
+    <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
+    <p class="text-gray-300 mb-2">📧 johndoe@example.com</p>
+    <p class="text-gray-300 mb-2">🔗 <a href="https://linkedin.com/in/johndoe" class="text-blue-400">LinkedIn</a> | <a href="https://github.com/johndoe" class="text-blue-400">GitHub</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 text-center py-4 text-gray-400">
+    © 2025 John Doe. All rights reserved.
+  </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

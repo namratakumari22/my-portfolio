@@ -1,0 +1,71 @@
+/* ========== Base Resets ========== */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Smooth scrolling for anchor navigation */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ========== Custom Scrollbar ========== */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #1f2937; /* gray-800 */
+}
+::-webkit-scrollbar-thumb {
+  background: #3b82f6; /* blue-500 */
+  border-radius: 6px;
+}
+
+/* ========== Global Styles ========== */
+body {
+  line-height: 1.6;
+}
+
+/* Section offset for sticky header */
+section {
+  scroll-margin-top: 80px;
+}
+
+/* Images should never overflow */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Buttons and interactive elements */
+button, .btn {
+  transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:hover, .btn:hover {
+  transform: scale(1.05);
+}
+
+/* ========== Optional Hover Underline ========== */
+a.underline-hover {
+  position: relative;
+  text-decoration: none;
+}
+a.underline-hover::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -2px;
+  left: 0;
+  background-color: #3b82f6;
+  transform-origin: bottom right;
+  transition: transform 0.3s ease-out;
+}
+a.underline-hover:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
