@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>My Digital Portfolio</title>
+  <title>Namrata's Portfolio</title>
 
   <!-- TailwindCSS -->
   <script src="https://cdn.tailwindcss.com"></script>
@@ -11,8 +11,8 @@
   <!-- AOS Scroll Animation -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
 
-  <!-- Custom CSS -->
-  <link rel="stylesheet" href="style.css" />
+  <!-- Font Awesome for Icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
@@ -23,89 +23,268 @@
 <body class="bg-gray-900 text-white font-sans scroll-smooth">
 
   <!-- Header -->
-  <header class="bg-gray-800 sticky top-0 z-50 shadow-md">
-    <div class="max-w-6xl mx-auto px-4 py-3 flex justify-between items-center">
-      <h1 class="text-xl font-bold">John Doe</h1>
-      <nav class="space-x-4">
+  <header class="bg-gray-900 sticky top-0 z-50 shadow-md">
+    <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-white">Port<span class="text-blue-400">folio</span></h1>
+      <nav class="hidden md:flex space-x-6 text-white text-sm">
         <a href="#about" class="hover:text-blue-400">About</a>
+        <a href="#education" class="hover:text-blue-400">Education</a>
         <a href="#projects" class="hover:text-blue-400">Projects</a>
+        <a href="#internship" class="hover:text-blue-400">Internship</a>
         <a href="#skills" class="hover:text-blue-400">Skills</a>
-        <a href="#certifications" class="hover:text-blue-400">Certifications</a>
         <a href="#resume" class="hover:text-blue-400">Resume</a>
         <a href="#contact" class="hover:text-blue-400">Contact</a>
       </nav>
+      <a href="assets/resume.pdf" download class="bg-pink-500 text-white px-4 py-2 rounded-full text-sm hover:bg-pink-600 transition">Download CV</a>
     </div>
   </header>
 
-  <!-- Landing Section -->
-  <section id="home" class="min-h-screen flex flex-col justify-center items-center text-center p-6 bg-gradient-to-br from-gray-900 to-gray-800">
-    <img src="assets/profile.jpg" alt="Profile Picture" class="w-32 h-32 rounded-full mb-4 border-4 border-blue-500"/>
-    <h2 class="text-4xl font-bold mb-2">Hi, I'm John Doe</h2>
-    <p class="text-lg text-gray-300 mb-6">Aspiring Full Stack Developer & Cloud Enthusiast</p>
-    <a href="#about" class="bg-blue-600 hover:bg-blue-700 px-6 py-2 rounded text-white transition btn">Get Started</a>
+  <!-- Hero Section -->
+  <section id="home" class="bg-gradient-to-br from-gray-900 to-gray-800 min-h-screen flex flex-col justify-center items-center md:flex-row px-8 py-16">
+    <div class="md:w-1/2 flex justify-center mb-8 md:mb-0" data-aos="fade-right">
+      <div class="relative w-72 h-72 rounded-full bg-blue-500 bg-opacity-20 blur-xl absolute z-0"></div>
+      <img src="assets/profile.jpg" alt="Profile" class="relative z-10 w-64 h-64 rounded-full border-4 border-blue-400 shadow-xl object-cover">
+    </div>
+    <div class="md:w-1/2 text-center md:text-left text-white space-y-4" data-aos="fade-left">
+      <h2 class="text-4xl font-semibold">Hello, I'm</h2>
+      <h1 class="text-5xl font-extrabold text-blue-400">Namrata Kumari</h1>
+      
+      <p class="text-gray-400 max-w-md">Where Finance Meets Purpose: Empowering Businesses with Numbers & People.</p>
+      <div class="flex space-x-4 mt-4 justify-center md:justify-start">
+        <a href="#" class="text-blue-400 hover:text-white text-xl"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://linkedin.com/in/namrata-kumari-5a5355293" class="text-blue-400 hover:text-white text-xl"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://github.com/namratakumari22" class="text-blue-400 hover:text-white text-xl"><i class="fab fa-github"></i></a>
+      </div>
+      <div class="mt-6 flex gap-4 justify-center md:justify-start">
+        <a href="#contact" class="bg-blue-600 px-5 py-2 rounded hover:bg-blue-700 transition">Hire Me</a>
+        <a href="#contact" class="border border-blue-400 px-5 py-2 rounded hover:bg-blue-500 hover:text-white transition">Contact Me</a>
+      </div>
+    </div>
   </section>
 
   <!-- About Section -->
   <section id="about" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-semibold mb-4">About Me</h2>
-      <p class="text-gray-300">
-        I am a passionate developer currently exploring the world of AI, cloud computing, and full-stack web development.
-        I love creating smart, scalable, and secure solutions to solve real-world problems.
-      </p>
+      <p class="text-gray-300">I’m a purpose-driven business professional with a dual specialization in Human Resources and Banking & Financial Services. My work goes beyond academics — from optimizing customer experience at a national bank, scaling digital reach for startups, to innovating with patent-pending solutions in safety and sustainability.
+
+I thrive at the intersection of people, performance, and progress. Whether it’s financial modeling for growth-stage ventures or leading grassroots development projects, I bring strategic clarity, empathy, and executional strength. My approach is simple — solve real problems, create measurable value, and never stop learning.</p>
     </div>
   </section>
+
+  <!-- Education Section -->
+<section id="education" class="py-20 px-6 bg-gray-900 text-white" data-aos="fade-up">
+  <div class="max-w-5xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-8 border-b border-gray-700 pb-2">Education</h2>
+
+    <div class="space-y-6">
+
+      <!-- MBA -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-user-graduate text-blue-400 text-2xl"></i>
+          <div>
+            <h3 class="text-xl font-bold text-blue-400">Master of Business Administration</h3>
+            <p class="text-gray-300">Lovely Professional University, Punjab, India</p>
+            <p class="text-gray-400 text-sm">Aug 2024 – Nov 2026 | CGPA: 7.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bachelor’s -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-right">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-university text-blue-400 text-2xl"></i>
+          <div>
+            <h3 class="text-xl font-bold text-blue-400">Bachelor’s Degree (Graduation)</h3>
+            <p class="text-gray-300">Lovely Professional University, Punjab, India</p>
+            <p class="text-gray-400 text-sm">Jul 2022 – Mar 2024 | CGPA: 7.00</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 12th Grade -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-left">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-school text-green-400 text-2xl"></i>
+          <div>
+            <h3 class="text-xl font-bold text-blue-400">Intermediate (12th Grade)</h3>
+            <p class="text-gray-300">SHG Intermediate College, Bihar, India</p>
+            <p class="text-gray-400 text-sm">Jul 2018 – Mar 2019 | Percentage: 78%</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- 10th Grade -->
+      <div class="bg-gray-800 rounded-lg shadow-md p-6 transform transition duration-300 hover:scale-105 hover:shadow-xl" data-aos="fade-up">
+        <div class="flex items-center space-x-4">
+          <i class="fas fa-book text-indigo-400 text-2xl"></i>
+          <div>
+            <h3 class="text-xl font-bold text-indigo-400">Secondary School (10th Grade)</h3>
+            <p class="text-gray-300">ST. Joseph Academy, Bihar, India</p>
+            <p class="text-gray-400 text-sm">Apr 2016 – Mar 2017 | CGPA: 9.6</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Projects Section -->
-  <section id="projects" class="py-20 px-6" data-aos="fade-up">
-    <div class="max-w-6xl mx-auto">
-      <h2 class="text-3xl font-semibold mb-8">Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <!-- Project 1 -->
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
-          <img src="assets/project1.png" alt="Project 1" class="rounded mb-4">
-          <h3 class="text-xl font-bold mb-2">AI Review Summarizer</h3>
-          <p class="text-gray-300 mb-2">A web app that analyzes and summarizes customer reviews using NLP and sentiment analysis.</p>
-          <a href="#" class="text-blue-400 hover:underline">View Demo</a>
-        </div>
+<section id="projects" class="py-20 px-6 bg-gray-900 text-white" data-aos="fade-up">
+  <div class="max-w-3xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-8 border-b border-gray-600 pb-2">Projects</h2>
 
-        <!-- Project 2 -->
-        <div class="bg-gray-800 p-6 rounded-lg shadow-md transform hover:scale-105 transition duration-300">
-          <img src="assets/project1.png" alt="Project 2" class="rounded mb-4">
-          <h3 class="text-xl font-bold mb-2">TenantExitEase</h3>
-          <p class="text-gray-300 mb-2">AWS-powered app for tenant-landlord exit management with FastAPI backend and S3/DynamoDB integration.</p>
-          <a href="#" class="text-blue-400 hover:underline">View GitHub</a>
+    <!-- Project Cards -->
+    <div class="space-y-6">
+
+      <!-- Project 1 -->
+      <div class="bg-gray-800 p-6 rounded shadow-md" data-aos="fade-up" data-aos-delay="100">
+        <h3 class="text-xl font-bold text-blue-400">Financial Modeling – Sahyog Bachat Mandal</h3>
+        <p class="text-gray-300 mt-2">Built a model to enhance financial inclusion, transparency, and operational efficiency for underserved communities.</p>
+        <div class="hidden mt-3 text-gray-400 text-sm" id="details1">
+          <p>- Used Excel, PowerPoint, and scenario simulations.</p>
+          <p>- Delivered a 10-slide model and operational breakdown to clients.</p>
         </div>
+        <button onclick="toggleDetails('details1', this)" class="mt-3 text-sm text-blue-400 hover:underline">View More</button>
       </div>
+
+      <!-- Project 2 -->
+      <div class="bg-gray-800 p-6 rounded shadow-md" data-aos="fade-up" data-aos-delay="200">
+        <h3 class="text-xl font-bold text-blue-400">Startup Strategic Planning – LocalNest</h3>
+        <p class="text-gray-300 mt-2">Created financial projections, strategic frameworks, marketing plans, and cost models for startup scaling.</p>
+        <div class="hidden mt-3 text-gray-400 text-sm" id="details2">
+          <p>- Developed roadmap, pitch deck, and risk matrices.</p>
+          <p>- Integrated insights from AWS tools and lean finance.</p>
+        </div>
+        <button onclick="toggleDetails('details2', this)" class="mt-3 text-sm text-blue-400 hover:underline">View More</button>
+      </div>
+
+      <!-- Project 3 -->
+      <div class="bg-gray-800 p-6 rounded shadow-md" data-aos="fade-up" data-aos-delay="300">
+        <h3 class="text-xl font-bold text-blue-400">Shopify Store Project – LPU</h3>
+        <p class="text-gray-300 mt-2">Designed and deployed an eCommerce store, improving client sales by 25% and streamlining backend operations.</p>
+        <div class="hidden mt-3 text-gray-400 text-sm" id="details3">
+          <p>- Customized storefront, checkout, and analytics.</p>
+          <p>- Applied user experience and conversion rate optimization.</p>
+        </div>
+        <button onclick="toggleDetails('details3', this)" class="mt-3 text-sm text-blue-400 hover:underline">View More</button>
+      </div>
+
     </div>
-  </section>
+  </div>
+</section>
+
 
   <!-- Skills Section -->
-  <section id="skills" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-semibold mb-4">Skills & Tools</h2>
-      <div class="flex flex-wrap gap-4 mt-4">
-        <span class="bg-blue-500 px-4 py-2 rounded">Python</span>
-        <span class="bg-green-600 px-4 py-2 rounded">FastAPI</span>
-        <span class="bg-yellow-500 px-4 py-2 rounded">AWS</span>
-        <span class="bg-indigo-600 px-4 py-2 rounded">TailwindCSS</span>
-        <span class="bg-pink-600 px-4 py-2 rounded">GitHub</span>
-        <span class="bg-red-600 px-4 py-2 rounded">JavaScript</span>
+<section id="skills" class="py-20 px-6 bg-gray-800" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6">Skills & Tools</h2>
+
+    <!-- Technical Skills -->
+    <div class="mb-8">
+      <h3 class="text-xl font-bold text-blue-400 mb-3">Technical:</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="flex items-center gap-2 bg-blue-600 text-white px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-blue-700 transition">
+          <i class="fab fa-python"></i> Python
+        </span>
+        <span class="flex items-center gap-2 bg-gray-700 text-white px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-gray-800 transition">
+          <i class="fas fa-file-alt"></i> MS Office
+        </span>
+        <span class="flex items-center gap-2 bg-pink-500 text-white px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-pink-600 transition">
+          <i class="fas fa-paint-brush"></i> Canva
+        </span>
+        <span class="flex items-center gap-2 bg-indigo-600 text-white px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-indigo-700 transition">
+          <i class="fas fa-image"></i> Adobe Photoshop
+        </span>
+        <span class="flex items-center gap-2 bg-yellow-400 text-black px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-yellow-500 transition">
+          <i class="fas fa-chart-bar"></i> Tableau
+        </span>
       </div>
     </div>
-  </section>
+
+    <!-- Finance Skills -->
+    <div>
+      <h3 class="text-xl font-bold text-green-400 mb-3">Finance:</h3>
+      <div class="flex flex-wrap gap-3">
+        <span class="flex items-center gap-2 bg-green-600 text-white px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-green-700 transition">
+          <i class="fas fa-file-invoice-dollar"></i> Financial Statement Analysis
+        </span>
+        <span class="flex items-center gap-2 bg-green-500 text-white px-4 py-1 rounded-full text-sm hover:scale-105 hover:bg-green-600 transition">
+          <i class="fas fa-chart-line"></i> Stock Market Trading
+        </span>
+      </div>
+    </div>
+  </div>
+</section>
+
 
   <!-- Certifications Section -->
   <section id="certifications" class="py-20 px-6" data-aos="fade-up">
     <div class="max-w-3xl mx-auto">
       <h2 class="text-3xl font-semibold mb-4">Certifications</h2>
       <ul class="list-disc pl-6 text-gray-300">
-        <li>AWS Cloud Practitioner – 2024</li>
-        <li>IBM AI Engineering Certificate – 2024</li>
-        <li>POSH Policy & Compliance Training – 2025</li>
+        <li>SEBI Investor Certification – NISM (May 2024)</li>
+        <li>Leadership Skills – IIM Ahmedabad (Jan 2024)</li>
+        <li>Career Essentials in Generative AI – Microsoft & LinkedIn (Nov 2023)</li>
+        <li>Master Microsoft Excel – LinkedIn (Nov 2023)</li>
+        <li>Accounting Foundations – LinkedIn (Oct 2023)</li>
       </ul>
     </div>
   </section>
+
+  <!-- Internship Section -->
+<section id="internship" class="py-20 px-6 bg-gray-900" data-aos="fade-up">
+  <div class="max-w-4xl mx-auto">
+    <h2 class="text-3xl font-semibold mb-6 text-white">Internships</h2>
+
+    <!-- Internship 1 -->
+    <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-md">
+      <h3 class="text-xl font-bold text-blue-400">Finance & Strategy Intern – LocalNest</h3>
+      <p class="text-sm text-gray-400 italic">April 2024 – May 2024</p>
+      <ul class="list-disc text-gray-300 pl-5 mt-2 space-y-1">
+        <li>Created financial models to optimize investment and operational strategies for a SaaS startup.</li>
+        <li>Worked on go-to-market planning and startup cost analysis.</li>
+        <li>Collaborated with founders to drive execution plans aligned with market research.</li>
+      </ul>
+    </div>
+
+    <!-- Internship 2 -->
+    <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-md">
+      <h3 class="text-xl font-bold text-blue-400">Content Marketing Intern – MarketingWings</h3>
+      <p class="text-sm text-gray-400 italic">February 2024 – March 2024</p>
+      <ul class="list-disc text-gray-300 pl-5 mt-2 space-y-1">
+        <li>Planned and executed Instagram campaigns boosting engagement by 40%.</li>
+        <li>Created SEO-driven blog posts, stories, and reels for D2C brands.</li>
+      </ul>
+    </div>
+
+    <!-- Internship 3 -->
+    <div class="bg-gray-800 p-6 rounded-lg mb-6 shadow-md">
+      <h3 class="text-xl font-bold text-blue-400">Community Growth Intern – CommunityHood</h3>
+      <p class="text-sm text-gray-400 italic">January 2024</p>
+      <ul class="list-disc text-gray-300 pl-5 mt-2 space-y-1">
+        <li>Supported India’s first community incubator for startups, handling onboarding and social engagement.</li>
+        <li>Assisted community managers in event planning and impact reporting.</li>
+      </ul>
+    </div>
+
+    <!-- Internship 4 -->
+    <div class="bg-gray-800 p-6 rounded-lg shadow-md">
+      <h3 class="text-xl font-bold text-blue-400">Campus Ambassador – IMUN</h3>
+      <p class="text-sm text-gray-400 italic">August 2023 – September 2023</p>
+      <ul class="list-disc text-gray-300 pl-5 mt-2 space-y-1">
+        <li>Represented IMUN on campus; promoted MUN participation among peers.</li>
+        <li>Built communication and persuasion skills through outreach activities.</li>
+      </ul>
+    </div>
+
+  </div>
+</section>
+
 
   <!-- Resume Section -->
   <section id="resume" class="py-20 px-6 bg-gray-800 text-center" data-aos="fade-up">
@@ -116,20 +295,21 @@
   <!-- Contact Section -->
   <section id="contact" class="py-20 px-6 text-center" data-aos="fade-up">
     <h2 class="text-3xl font-semibold mb-4">Get in Touch</h2>
-    <p class="text-gray-300 mb-2">📧 johndoe@example.com</p>
-    <p class="text-gray-300 mb-2">🔗 <a href="https://linkedin.com/in/johndoe" class="text-blue-400">LinkedIn</a> | <a href="https://github.com/johndoe" class="text-blue-400">GitHub</a></p>
+    <p class="text-gray-300 mb-2">📧 kumarinamrata101010@gmail.com</p>
+    <p class="text-gray-300 mb-2">
+      🔗 <a href="https://linkedin.com/in/namrata-kumari-5a5355293" class="text-blue-400">LinkedIn</a> |
+      
+    </p>
   </section>
 
   <!-- Footer -->
   <footer class="bg-gray-800 text-center py-4 text-gray-400">
-    © 2025 John Doe. All rights reserved.
+    © 2025 Namrata Kumari. All rights reserved.
   </footer>
 
   <!-- Scripts -->
   <script src="script.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
+  <script>AOS.init();</script>
 </body>
 </html>

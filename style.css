@@ -1,11 +1,11 @@
-/* ========== Base Resets ========== */
+/* ========== Base Reset ========== */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Smooth scrolling for anchor navigation */
+/* Smooth scrolling behavior for internal links */
 html {
   scroll-behavior: smooth;
 }
@@ -15,31 +15,34 @@ html {
   width: 8px;
 }
 ::-webkit-scrollbar-track {
-  background: #1f2937; /* gray-800 */
+  background: #1f2937; /* Tailwind gray-800 */
 }
 ::-webkit-scrollbar-thumb {
-  background: #3b82f6; /* blue-500 */
+  background: #3b82f6; /* Tailwind blue-500 */
   border-radius: 6px;
 }
 
-/* ========== Global Styles ========== */
+/* ========== Global Body ========== */
 body {
   line-height: 1.6;
+  background-color: #111827; /* Tailwind gray-900 */
+  color: #fff;
 }
 
-/* Section offset for sticky header */
+/* Section offset to avoid hiding behind sticky header */
 section {
   scroll-margin-top: 80px;
 }
 
-/* Images should never overflow */
+/* Responsive images */
 img {
   max-width: 100%;
   height: auto;
   display: block;
+  object-fit: cover;
 }
 
-/* Buttons and interactive elements */
+/* Buttons, transitions, and hover effects */
 button, .btn {
   transition: transform 0.2s ease-in-out, background-color 0.2s ease-in-out;
   cursor: pointer;
@@ -48,7 +51,7 @@ button:hover, .btn:hover {
   transform: scale(1.05);
 }
 
-/* ========== Optional Hover Underline ========== */
+/* ========== Optional Hover Underline for Links ========== */
 a.underline-hover {
   position: relative;
   text-decoration: none;
@@ -68,4 +71,15 @@ a.underline-hover::after {
 a.underline-hover:hover::after {
   transform: scaleX(1);
   transform-origin: bottom left;
+}
+
+/* Typing animation cursor (optional) */
+.typing::after {
+  content: '|';
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 50%, 100% { opacity: 1; }
+  25%, 75% { opacity: 0; }
 }
